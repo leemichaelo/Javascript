@@ -20,3 +20,4 @@ function questionsLeft(reduceby) {
     numberOfQuestions -= reduceby;
     return messageToReturn;
 }
+
