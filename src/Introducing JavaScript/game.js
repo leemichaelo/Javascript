@@ -21,7 +21,7 @@ function addItems() {
     createItem(500, 400, 'poison');
     createItem(100, 200, 'coin');
     createItem(600, 200, 'poison');
-    createItem(200, 150, 'coin');
+    createItem(500, 25, 'coin');
     createItem(400, 150, 'coin');
     createItem(50, 0, 'star');
 }
@@ -35,9 +35,9 @@ function addPlatforms() {
     platforms.create(450, 450, 'platform');
     platforms.create(100, 250, 'platform2');
     platforms.create(600, 250, 'platform');
-    platforms.create(200, 200, 'platform2');
+    platforms.create(500, 100, 'platform2');
     platforms.create(400, 200, 'platform');
-    platforms.create(50, 50, 'platform');
+    platforms.create(50, 75, 'platform');
 
     platforms.setAll('body.immovable', true);
 }
@@ -59,8 +59,17 @@ function createBadge() {
 
 // when the player collects an item on the screen
 function itemHandler(player, item) {
-    item.kill();
-    currentScore = currentScore + 10;
+    item.kill();   
+    if (item.key === 'coin') {
+        currentScore = currentScore + 10;
+    }
+    else if (item.key === 'poison') {
+        currentScore -= 25;
+    }
+    else {
+        currentScore += 25;
+    }
+
     if (currentScore === winningScore) {
         createBadge();
     }
