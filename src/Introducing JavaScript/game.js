@@ -15,13 +15,30 @@ var winningScore = 100;
 // add collectable items to the game
 function addItems() {
   items = game.add.physicsGroup();
-  createItem(375, 300, 'coin');
+    createItem(600, 500, 'coin');
+    createItem(100, 500, 'coin');
+    createItem(300, 350, 'coin');
+    createItem(500, 400, 'coin');
+    createItem(100, 200, 'coin');
+    createItem(600, 200, 'coin');
+    createItem(200, 150, 'coin');
+    createItem(400, 150, 'coin');
+    createItem(50, 0, 'coin');
 }
 
 // add platforms to the game
 function addPlatforms() {
   platforms = game.add.physicsGroup();
-  platforms.create(450, 150, 'platform');
+    platforms.create(600, 550, 'platform2');
+    platforms.create(100, 550, 'platform');
+    platforms.create(300, 400, 'platform2');
+    platforms.create(450, 450, 'platform');
+    platforms.create(100, 250, 'platform2');
+    platforms.create(600, 250, 'platform');
+    platforms.create(200, 200, 'platform2');
+    platforms.create(400, 200, 'platform');
+    platforms.create(50, 50, 'platform');
+    
   platforms.setAll('body.immovable', true);
 }
 
@@ -64,7 +81,8 @@ window.onload = function () {
     game.stage.backgroundColor = '#5db1ad';
     
     //Load images
-    game.load.image('platform', 'platform_1.png');
+      game.load.image('platform', 'platform_1.png');
+      game.load.image('platform2', 'platform_2.png');
     
     //Load spritesheets
     game.load.spritesheet('player', 'chalkers.png', 48, 62);
