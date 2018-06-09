@@ -68,9 +68,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\main.css" />
-    <Content Include="index.html" />
-    <Content Include="scripts.js" />
+    <Content Include="CSS\main.css" />
+    <Content Include="Script\DoingMath.js" />
+    <Content Include="View\index.html" />
+    <Content Include="Script\WorkingStrings.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
