@@ -2,8 +2,8 @@
 var guessThis = randomNumber(6);
 var guessAttempts = 0;
 var computerGuess = 0;
-var userGuess = " ";
 var userAttempts = 0;
+var userGuess = " ";
 
 //Define functions
 function randomNumber(upper) {
