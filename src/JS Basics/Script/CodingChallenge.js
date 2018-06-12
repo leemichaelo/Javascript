@@ -1,9 +1,7 @@
-﻿//Five Questions
-//Keep track of how many questions answered correctly
-//Final Message of how many they got right
-//Rank the player, 1-2 bronze, 3-4 silver, 5 gold, 0 is no crown
-
+﻿//Quiz begins with zero right
 var numberRight = 0;
+
+//Ask Questions
 var questionOne = prompt("Maester Amon is blind in real life");
 if (questionOne === "true") {
     alert("Correct!");
@@ -49,15 +47,19 @@ else {
     alert("That was incorrect...");
 }
 
+// output results
+document.write("<p>You got " + numberRight + " out of 5 questions correct.<p>");
+
+// output rank
 if (numberRight >= 5) {
-    document.write("You got " + numberRight + " answers correct! You've earned a Gold Crown!");
+    document.write("<p><strong>You earned a gold crown!</strong></p>");
 }
 else if (numberRight >= 3) {
-    document.write("You got " + numberRight + " answers correct! You've earned a Silver Crown!")
+    document.write("<p><strong>You earned a silver crown.</strong></p>");
 }
 else if (numberRight >= 1) {
-    document.write("You got " + numberRight + " answers correct! You've earned a Bronze Crown!")
+    document.write("<p><strong>You earned a bronze crown.</strong></p>");
 }
 else {
-    document.write("You Didn't Get Any Questions Right, Better Luck Next Time!")
+    document.write("<p><strong>No crown for you. You need to study.</strong></p>");
 }
