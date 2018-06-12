@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\main.css" />
+    <Content Include="Script\CodingChallenge.js" />
     <Content Include="Script\Comparisons.js" />
     <Content Include="Script\Quiz.js" />
     <Content Include="Script\Random.js" />
