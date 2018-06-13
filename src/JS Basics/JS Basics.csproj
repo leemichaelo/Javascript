@@ -71,10 +71,12 @@
     <Content Include="CSS\main.css" />
     <Content Include="Script\CodingChallenge.js" />
     <Content Include="Script\Comparisons.js" />
+    <Content Include="Script\ForLoopDiv.js" />
     <Content Include="Script\Functions.js" />
     <Content Include="Script\Loops.js" />
     <Content Include="Script\Quiz.js" />
     <Content Include="Script\Random.js" />
+    <Content Include="Script\RefactoringChallenge.js" />
     <Content Include="Script\SecondsAlive.js" />
     <Content Include="Script\DoingMath.js" />
     <Content Include="View\index.html" />

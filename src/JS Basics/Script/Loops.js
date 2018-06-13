@@ -33,3 +33,11 @@ document.writeln("<br><br>It took the you " + userAttempts +
     " guesses to get the correct answer.");
 document.writeln("<br><br>It took the computer " + guessAttempts +
     " guesses to get the correct answer.");
+
+/*for(var i = 0; i < 10; i += 1){
+ * document.write(i);
+ }
+ */
+
+//Refactor Challenge Adds Ten Dots to the page, and colors change 
+//each time it is reloaded
