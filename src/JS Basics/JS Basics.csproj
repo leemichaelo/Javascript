@@ -69,11 +69,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\main.css" />
+    <Content Include="Script\Arrays.js" />
     <Content Include="Script\CodingChallenge.js" />
     <Content Include="Script\Comparisons.js" />
     <Content Include="Script\ForLoopDiv.js" />
     <Content Include="Script\Functions.js" />
+    <Content Include="Script\helpers.js" />
     <Content Include="Script\Loops.js" />
+    <Content Include="Script\playlist.js" />
     <Content Include="Script\Quiz.js" />
     <Content Include="Script\Random.js" />
     <Content Include="Script\RefactoringChallenge.js" />
