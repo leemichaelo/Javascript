@@ -78,6 +78,7 @@
     <Content Include="Script\Loops.js" />
     <Content Include="Script\playlist.js" />
     <Content Include="Script\Quiz.js" />
+    <Content Include="Script\QuizChallenge.js" />
     <Content Include="Script\Random.js" />
     <Content Include="Script\RefactoringChallenge.js" />
     <Content Include="Script\Search.js" />

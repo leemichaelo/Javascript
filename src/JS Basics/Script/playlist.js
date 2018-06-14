@@ -1,13 +1,23 @@
-﻿var playList = [];
+﻿var playList = [
+    ["I Did It My Way", "Frank Sinatra"],
+    ["Respect", "Aretha Franklin"],
+    ["Imagine", "John Lennon"],
+    ["Born to Run", "Bruce SPringsteen"],
+    ["Louie Louie", "The Kingsmen"],
+    ["Maybeleen", "Chuck Berry"],
+];
 
-playList.push("I Did It My Way");
-playList.push("Respect", "Imagine");
-playList.unshift("Born to Run");
-playList.unshift("Louie Louie", "Marybellene");
+function print(html) {
+    document.write(html);
+}
 
-printList(playList);
+function printSongs(songs) {
+    var listHTML = '<ol>';
+    for (var i = 0; i < songs.length; i += 1) {
+        listHTML += '<li>' + songs[i][0] + ", by " + songs[i][1] + '</li>';
+    }
+    listHTML += '</ol>';
+    print(listHTML);
+}
 
-playList.pop();
-playList.shift();
-
-printList(playList);
+printSongs(playList);
