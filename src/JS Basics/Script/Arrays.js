@@ -15,4 +15,5 @@ shoppingList.shift();//Removes from the font
 shoppingList.length;//returns the size of array
 shoppingList.join(", ");//Adds string between elements
 var combinedList = shoppingList.concat(newShoppingList); //Combines two arrays
+shoppingList.indexOf("carrots");//Returns the index position of the word searched or -1
 
